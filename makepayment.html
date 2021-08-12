@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Barrie Payment Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="sp-90 flex-center-align">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-60 flex-baseline flex-space-between">
+                    <h1 class="h-1 text-left h-bold mb-10">Make Payment</h1>
+                    <a href="index.html" class="h-6 text-right">
+                        Logout
+                    </a>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="sample br-5 p-20">
+                                <form action="paymenthistory.html">
+                                    <div class="form-group mb-20">
+                                        <label for="exampleInputName" class="label-class mb-10">Name</label>
+                                        <input type="text" class="form-control form-class mb-10" id="exampleInputName" aria-describedby="name" placeholder="Enter Name">
+                                    </div>
+                                    <div class="form-group mb-20">
+                                        <label for="exampleInputEmail1" class="label-class mb-10">Email address</label>
+                                        <input type="email" class="form-control form-class mb-10" id="exampleInputEmail1" aria-describedby="email" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group mb-20">
+                                        <label for="exampleInputCard" class="label-class mb-10">Credit Card</label>
+                                        <input type="text" class="form-control form-class mb-10" id="exampleInputCard" aria-describedby="card" placeholder="Enter credit card">
+                                        <small id="card" class="form-text text-muted">We'll never share your credit card with anyone else.</small>
+                                    </div>
+                                    <div class="form-group row mb-20">
+                                        <div class="col-lg-6">
+                                            <label for="exampleInputmonthyear" class="label-class mb-10">MM/YY</label>
+                                            <input type="text" class="form-control form-class mb-10" id="exampleInputmonthyear" placeholder="mm/yy">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="exampleInputCVC" class="label-class mb-10">CVC</label>
+                                            <input type="tel" class="form-control form-class mb-10" id="exampleInputCVC" placeholder="Enter CVC">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="exampleInputZip" class="label-class mb-10">Zip Code</label>
+                                            <input type="tel" class="form-control form-class mb-10" id="exampleInputZip" placeholder="Enter Zip">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="sample br-5 p-20">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4 class="h-4 text-center">
+                                            Amount Due
+                                        </h4>
+                                        <div class="mt-20 straight-line"></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="p-30-0">
+                                            <h3 class="h-3 text-center">
+                                                To Pay
+                                            </h3>
+                                            <h1 class="h-1 text-center h-bold mt-10">
+                                                $250
+                                            </h1>
+                                        </div>
+                                        <div class="straight-line"></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="p-30-0 flex-center-align flex-column">
+                                            <h4 class="h-3 text-center" style="width:50%;">
+                                                How much amount you would like to pay?
+                                            </h4>
+                                            <input type="tel" class="form-control form-class mt-10 mb-10" id="exampleInputAmout" placeholder="Enter Amount">
+                                        </div>
+                                        <div class="straight-line"></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="p-30-0">
+                                            <h3 class="h-3 text-center">
+                                                New Balance
+                                            </h3>
+                                            <h1 class="h-1 text-center h-bold mt-10">
+                                                $50
+                                            </h1>
+                                        </div>
+                                        <div class="straight-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 offset-lg-2">
+                            <button type="submit" class="w-100 br-5 mt-30 p-20-30 s-btn">Make Payment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

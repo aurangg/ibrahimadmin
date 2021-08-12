@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Barrie Payment Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="sp-90 flex-center-align">
+        <!-- Button trigger modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog flex-center-align height-100" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                Are you sure you want to delete the user?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-60 flex-wrap">
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            January
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            February
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            March
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            April
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            May
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            June
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            June
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            July
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            August
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                    <div class="sample p-20 mr-10 mb-10">
+                        <h6 class="h-6 text-center">
+                            September
+                        </h6>
+                        <h3 class="h-3 text-center">
+                            01
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sample p-20 br-5 flex-baseline flex-space-between">
+                        <h3 class="h-3 text-left h-bold">
+                            User Management
+                        </h3>
+                        <div>
+                            <a href="garage.html" class="mr-10 s-btn p-10 br-5 text-center">
+                                Garage
+                            </a>
+                            <a href="pedicab.html" class="mr-10 s-btn p-10 br-5 text-center">
+                                Pedicab
+                            </a>
+                            <a href="adduser.html" class="mr-10 s-btn p-10 br-5 text-center">
+                                Add A New User
+                            </a>
+                        </div>
+                    </div>
+                    <table class="table table-bordered table-dark table-responsive">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Amount Due</th>
+                            <th scope="col">Paid</th>
+                            <th scope="col">Total Balance</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <img class="svg-height mright-5" src="images/profile-user.svg" alt="" />
+                                John Doe
+                            </td>
+                            <td>$250</td>
+                            <td>$250</td>
+                            <td>$0</td>
+                            <td>
+                                <a href="adduser.html" >
+                                    <img class="svg-height mright-5" src="images/edit.svg" alt="" />
+                                </a>
+                                <a class="cursor" data-toggle="modal" data-target="#modal" >
+                                    <img class="svg-height mright-5" src="images/remove.svg" alt="" />
+                                </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>
+                                <img class="svg-height mright-5" src="images/profile-user.svg" alt="" />
+                                John Doe
+                            </td>
+                            <td>$250</td>
+                            <td>$250</td>
+                            <td>$0</td>
+                            <td>
+                                <a href="adduser.html" >
+                                    <img class="svg-height mright-5" src="images/edit.svg" alt="" />
+                                </a>
+                                <a class="cursor" data-toggle="modal" data-target="#modal" >
+                                    <img class="svg-height mright-5" src="images/remove.svg" alt="" />
+                                </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>
+                                <img class="svg-height mright-5" src="images/profile-user.svg" alt="" />
+                                John Doe
+                            </td>
+                            <td>$250</td>
+                            <td>$250</td>
+                            <td>$0</td>
+                            <td>
+                                <a href="adduser.html" >
+                                    <img class="svg-height mright-5" src="images/edit.svg" alt="" />
+                                </a>
+                                <a class="cursor" data-toggle="modal" data-target="#modal" >
+                                    <img class="svg-height mright-5" src="images/remove.svg" alt="" />
+                                </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>
+                                <img class="svg-height mright-5" src="images/profile-user.svg" alt="" />
+                                John Doe
+                            </td>
+                            <td>$250</td>
+                            <td>$250</td>
+                            <td>$0</td>
+                            <td>
+                                <a href="adduser.html" >
+                                    <img class="svg-height mright-5" src="images/edit.svg" alt="" />
+                                </a>
+                                <!-- <a href="edituser.html" >
+                                    <img class="svg-height mright-5" src="images/remove.svg" alt="" />
+                                </a> -->
+                                <a class="cursor" data-toggle="modal" data-target="#modal" >
+                                    <img class="svg-height mright-5" src="images/remove.svg" alt="" />
+                                </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
